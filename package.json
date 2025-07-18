@@ -1,0 +1,26 @@
+{
+    "name": "test",
+    "version": "0.0.0",
+    "engines": {
+        "node": ">= 22.14.0"
+    },
+    "type": "module",
+    "main": "./dist/index.js",
+    "exports": {
+        ".": "./dist/index.js",
+        "./package.json": "./package.json"
+    },
+    "scripts": {
+        "test": "vitest run --typecheck",
+        "docker:start": "docker compose up -d",
+        "docker:stop": "docker compose down"
+    },
+    "dependencies": {
+        "@platformatic/kafka": "^1.8.0"
+    },
+    "devDependencies": {
+        "@types/node": "^24.0.3",
+        "typescript": "^5.7.2",
+        "vitest": "^3.0.7"
+    }
+}
