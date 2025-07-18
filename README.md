@@ -18,8 +18,7 @@ We see this issue in Kakfa UI (provided in the example under localhost:8080) and
 Steps to reproduce:
 - Run `npm run docker:start`
 - Run `npm run test`
-- Wait for the Consumer active log to appear in the console.
-- When you see `Consumer active` log in the console
+- Wait for the `Consumer active` log to appear in the console.
 - Attempt to describe the consumer group using either with Kafka CLI or with Kafka UI (consumers tab)
 - The error will appear as described above.
 - After the test completes (consumer is closed), the error will disappear, and you will be able to describe the consumer group without issues.
