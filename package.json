@@ -16,7 +16,7 @@
         "docker:stop": "docker compose down"
     },
     "dependencies": {
-        "@platformatic/kafka": "^1.8.0"
+        "@platformatic/kafka": "^1.9.0"
     },
     "devDependencies": {
         "@types/node": "^24.0.3",
